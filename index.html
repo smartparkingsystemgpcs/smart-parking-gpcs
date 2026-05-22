@@ -326,7 +326,6 @@
         <tr>
           <th>Slot</th>
           <th>Status</th>
-          <th>Total Engaged Time</th>
           <th id="actionHead">Action</th>
         </tr>
       </thead>
@@ -472,7 +471,6 @@ function renderTable(data) {
     tr.innerHTML = `
       <td class="slot-label">${slot}</td>
       <td><span class="status-badge ${isFilled ? 'status-filled' : 'status-empty'}">${info.status}</span></td>
-      <td>${liveEl}</td>
       ${actionCell}`;
     tbody.appendChild(tr);
   });
